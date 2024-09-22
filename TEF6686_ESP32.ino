@@ -739,7 +739,7 @@ void setup() {
 
   tft.fillScreen(BackgroundColor);
   tftPrint(0, myLanguage[language][8], 160, 3, PrimaryColor, PrimaryColorSmooth, 28);
-  tftPrint(0, "Software " + String(VERSION), 160, 152, PrimaryColor, PrimaryColorSmooth, 16);
+  tftPrint(0, "软件版本:" + String(VERSION), 160, 152, PrimaryColor, PrimaryColorSmooth, 16);
 
   tft.fillRect(120, 230, 16, 6, GreyoutColor);
   tft.fillRect(152, 230, 16, 6, GreyoutColor);
@@ -2353,6 +2353,8 @@ void SelectBand() {
 #endif
     }
   }
+  // MY INFO
+  // tftPrint(-1, "BG3BHH's DIY 收音机", 113, 221, ActiveColor, ActiveColorSmooth, 16);
   leave = false;
 }
 
@@ -3147,6 +3149,8 @@ void ShowFreq(int mode) {
     }
     rdsflagreset = true;
   }
+  // MY INFO
+  tftPrint(-1, "BG3BHH's 收音机(MOD)", 113, 221, ActiveColor, ActiveColorSmooth, 16);
 }
 
 void ShowSignalLevel() {
